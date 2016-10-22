@@ -4,7 +4,8 @@ fetch-files
 Ansible Role: fetch-file
 ------------
 
-Ansible role that fetches to get your specified files on target machines.
+As executing the playbook, the role is copied from the target host in background and save it as a text file.
+The role allows to get the list of specific files simply.
 
 Install 
 ------------

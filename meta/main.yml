@@ -1,6 +1,6 @@
 galaxy_info:
   author: Takeshi Kuramochi
-  description: Fetch files you wants
+  description: Simple File Copy with Ansible Role
   #company: 
 
   # If the issue tracker for your role is not on github, uncomment the
@@ -144,12 +144,12 @@ galaxy_info:
   #  - squeeze
     - stretch
     - wheezy
-  #- name: EL
-  #  versions:
+  - name: EL
+    versions:
   #  - all
-  #  - 5
-  #  - 6
-  #  - 7
+    - 5
+    - 6
+    - 7
   #- name: Windows
   #  versions:
   #  - all
