@@ -25,12 +25,12 @@ Role Variables
 
 Available variables are listed below,
 
-defaults/main.yml:
+**defaults/main.yml:**
 ```
 savedir: "fetched"
 ```
 
-vars/files.yml:
+**vars/files.yml:**
 
 ```
 lists:
@@ -43,7 +43,7 @@ lists:
 This roles was created with automatic when you run a playbook.
 You only create a text file listed to get files below,
 
-Ex) sample_filelist.txt:
+**Ex) sample_filelist.txt:**
 ```
 /etc/ssh/sshd_config
 /usr/bin/python
