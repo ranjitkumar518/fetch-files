@@ -6,6 +6,14 @@ Ansible Role: fetch-file
 
 Ansible role that fetches to get your specified files on target machines.
 
+Install 
+------------
+
+```
+# ansible-galaxy install --roles-path ./roles tksarah.fetch-files
+```
+
+
 Requirements
 ------------
 
@@ -22,7 +30,7 @@ defaults/main.yml:
 savedir: "fetched"
 ```
 
-vars/main.yml:
+vars/files.yml:
 
 ```
 lists:
@@ -66,11 +74,11 @@ Example Playbook
   pre_tasks:
     - block:
         - name: Pre setup (create lists for fetch)
-          local_action: raw ./tools/create_var1.pl "{{ inputfile }}"
+          local_action: raw ./roles/tksarah.fetch-files/tools/create_vars.pl "{{ inputfile }}"
       become: false
 
   roles:
-    - fetch_file
+    - tksarah.fetch-files
 
 ```
 
