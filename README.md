@@ -10,6 +10,7 @@ Requirements
 ------------
 
 * Ansible version 2.0 < 
+* Perl 
 
 Role Variables
 --------------
