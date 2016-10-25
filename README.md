@@ -38,16 +38,15 @@ lists:
   - { filename: '/etc/ssh/sshd_config' }
   - { filename: '/var/log/syslog' }
   - { filename: '/etc/nsswitch.conf' }
-  - { filename: '/etc/SuSE-release' }
 ```
 
-This roles was created with automatic when you run a playbook.
-You only create a text file listed to get files below,
+This vars file will be created with automatic when you run a playbook.
+All you have to do is create a text file as below.
 
 **Ex) sample_filelist.txt:**
 ```
 /etc/ssh/sshd_config
-/usr/bin/python
+/var/log/syslog
 /etc/nsswitch.conf
 ```
 
