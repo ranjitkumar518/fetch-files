@@ -74,8 +74,9 @@ Example Playbook
   pre_tasks:
     - block:
         - name: Pre setup (create lists for fetch)
-          local_action: raw ./roles/tksarah.fetch-files/tools/create_vars.pl "{{ inputfile }}"
+          raw: ./roles/tksarah.fetch-files/tools/create_vars.pl "{{ inputfile }}"
       become: false
+      delegate_to: localhost
 
   roles:
     - tksarah.fetch-files
