@@ -35,6 +35,7 @@ savedir: "fetched"
 /etc/ssh/sshd_config
 /var/log/syslog
 /etc/nsswitch.conf
+/etc/hosts
 ```
 
 Dependencies
