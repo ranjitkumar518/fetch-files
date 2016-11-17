@@ -36,6 +36,7 @@ savedir: "fetched"
 /var/log/syslog
 /etc/nsswitch.conf
 /etc/hosts
+/boot/grub/grub.conf
 ```
 
 Dependencies
